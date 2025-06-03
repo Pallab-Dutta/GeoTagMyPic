@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lat Long Picker Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+  <img src="logo.png" alt="Logo" class="logo">
+  <h1>Geo<span class="tag-red">Tag</span> My Pic</h1>
+  </header>
+  <div class="form-body">
+  <form id="geoForm">
+    <label for="unit">Coordinate Format:</label>
+    <select class="coord-unit" id="unit" name="unit" onchange="toggleInputMode()">
+      <option value="dd">Decimal Degree (DD)</option>
+      <option value="dms">Degree Minute Second (DMS)</option>
+    </select>
+
+    <div id="ddInputs">
+      <label for="latitude">Latitude:</label>
+      <div class="dms-group">
+        <input type="number" id="latitude" name="latitude" step="any" placeholder="Decimal Degrees">
+      </div>
+
+      <label for="longitude">Longitude:</label>
+      <div class="dms-group">
+	<input type="number" id="longitude" name="longitude" step="any" placeholder="Decimal Degrees">
+      </div>
+    </div>
+
+    <div id="dmsInputs" style="display:none;">
+      <label>Latitude:</label>
+      <div class="dms-group">
+        <input type="number" id="latDeg" placeholder="Degrees">
+        <input type="number" id="latMin" placeholder="Minutes">
+        <input type="number" id="latSec" placeholder="Seconds">
+      </div>
+
+      <label>Longitude:</label>
+      <div class="dms-group">
+        <input type="number" id="longDeg" placeholder="Degrees">
+        <input type="number" id="longMin" placeholder="Minutes">
+        <input type="number" id="longSec" placeholder="Seconds">
+      </div>
+    </div>
+
+    <label for="date">Date:</label>
+    <input class="coord-unit" type="date" id="date" name="date" required>
+
+    <label for="time">Time:</label>
+    <input class="coord-unit" type="time" id="time" name="time" required>
+
+    <button type="button" onclick="submitForm()">Submit</button>
+    </div>
+  </form>
+  
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+

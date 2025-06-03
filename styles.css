@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  /*padding: 1rem;*/
+  margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select {
+  padding: 0.75rem;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dms-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.dms-group input {
+  flex: 1;
+  margin-top: 0.5rem;
+  border-radius: 90px;
+  border: 2px solid black;
+  outline: none;
+}
+
+.coord-unit {
+  margin-bottom: 1rem;
+  border: 2px solid black;
+  border-radius: 90px;
+  outline: none;
+}
+
+select.coord-unit {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1.5rem;
+  padding-right: 2.5rem;
+}
+
+
+button {
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.form-body {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.site-header {
+  padding: 0rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  background-color: black;
+  color: white;
+  height: 4rem;
+  justify-content: center;
+}
+
+.site-header .logo {
+  height: 3rem; /* Adjust size as needed */
+}
+
+.site-header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.tag-red {
+  color: red;
+}
+
