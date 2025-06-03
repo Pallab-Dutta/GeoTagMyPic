@@ -61,6 +61,8 @@ TW.MainButton.show().onClick(function () {
       data['IMGid'] = IMGid;
     }
 
+  data['formname'] = 'GeoTagForm';
+
   const jsonString = JSON.stringify(data);
   TW.sendData(jsonString);
   TW.close();
